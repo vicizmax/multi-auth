@@ -8,6 +8,9 @@ use Hesto\MultiAuth\Commands\Traits\OverridesGetArguments;
 use Hesto\MultiAuth\Commands\Traits\ParsesServiceInput;
 use Symfony\Component\Console\Input\InputOption;
 
+HttpControllers = '/app/Http/Controllers/';
+Auth = 'Auth/';
+
 
 class AuthFilesInstallCommand extends InstallFilesCommand
 {
@@ -107,19 +110,19 @@ class AuthFilesInstallCommand extends InstallFilesCommand
                 'stub' => __DIR__ . '/../stubs/Middleware/GuestMiddleware.stub',
             ],
             'login_controller' => [
-                'path' => '/app/Http/Controllers/' . ucfirst($name) . 'Auth/' . 'LoginController.php',
+                'path' => HttpControllers . ucfirst($name) . Auth . 'LoginController.php',
                 'stub' => __DIR__ . '/../stubs/Controllers/LoginController.stub',
             ],
             'register_controller' => [
-                'path' => '/app/Http/Controllers/' . ucfirst($name) . 'Auth/' . 'RegisterController.php',
+                'path' => HttpControllers . ucfirst($name) . Auth . 'RegisterController.php',
                 'stub' => __DIR__ . '/../stubs/Controllers/RegisterController.stub',
             ],
             'forgot_password_controller' => [
-                'path' => '/app/Http/Controllers/' . ucfirst($name) . 'Auth/' . 'ForgotPasswordController.php',
+                'path' => HttpControllers . ucfirst($name) . Auth . 'ForgotPasswordController.php',
                 'stub' => __DIR__ . '/../stubs/Controllers/ForgotPasswordController.stub',
             ],
             'reset_password_controller' => [
-                'path' => '/app/Http/Controllers/' . ucfirst($name) . 'Auth/' . 'ResetPasswordController.php',
+                'path' => HttpControllers . ucfirst($name) . Auth. 'ResetPasswordController.php',
                 'stub' => __DIR__ . '/../stubs/Controllers/ResetPasswordController.stub',
             ],
             'reset_password_notification' => [
