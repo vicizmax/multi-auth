@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "simone-sonar",
+        "projectKey": "vicizmax_multi-auth"
+    }
+}
