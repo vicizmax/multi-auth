@@ -8,6 +8,7 @@ class MultiAuthServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
+     * Hello!
      *
      * @return void
      */
