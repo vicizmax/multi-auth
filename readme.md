@@ -4,6 +4,8 @@
 - `php artisan multi-auth:install {guard} -f --domain`
 - `php artisan multi-auth:install {guard} {service} -f --lucid`
 
+## Hello!
+
 ## Version Guidance
 
 | Version | Laravel version |  Status         | Branch | Install                                  |
